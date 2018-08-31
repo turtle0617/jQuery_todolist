@@ -23,7 +23,9 @@
   padding: 5px 20px;
   border-radius: 5px;
 }
-
+.clear{
+  clear:both;
+}
 ul {
   padding-left: 0;
 }
@@ -32,21 +34,22 @@ li {
   list-style-type: none;
   font-size: 17px;
   margin-top: 10px;
-  
+  display: flex;
   outline: solid;
-  /* display: flex;
-  justify-content: space-between; */
-}
 
+}
+li>span:nth-of-type(1){
+  
+  flex-basis: 60%;
+  align-self: center;
+}
 .html_list {
   width: 50%;
 }
 
 .html_delete_btn {
   margin-left: 20px;
-  /* width: 70px; */
-  background-color: #ED0036;
-  color: white;
+  color: #ED0036;
   font-size: 17px;
   padding: 5px 20px;
   border-radius: 5px;
@@ -60,4 +63,7 @@ li {
   font-size: 17px;
   padding: 5px 20px;
   border-radius: 5px;
+}
+.modify_text{
+  display: none;
 }
